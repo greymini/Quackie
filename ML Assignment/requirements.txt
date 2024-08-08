@@ -1,0 +1,7 @@
+argparse
+datasets
+huggingface_hub
+peft
+torch
+transformers
+wandb
