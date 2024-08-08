@@ -1,0 +1,32 @@
+Explanation
+normalize_code Function:
+
+Purpose: This function normalizes a given piece of Python code by removing unnecessary newlines and spaces.
+How It Works:
+It uses regular expressions to replace sequences of whitespace and newlines with a single space.
+It ensures that there are no unnecessary spaces around parentheses by using regular expressions.
+resolve_diff Function:
+
+Purpose: This function identifies the differences between two Python code snippets while ignoring comments.
+How It Works:
+It filters out comments from the code snippets.
+It normalizes the non-comment code snippets by converting them into single-line strings and removing unnecessary spaces.
+It then splits the normalized code into lists of strings.
+Finally, it compares the two lists and identifies the differences, returning them as a list of strings.
+resolve_categorized_diff Function:
+
+Purpose: This function identifies and categorizes the differences between two Python code snippets into interpreter, formatting, and comment differences.
+How It Works:
+It extracts comment lines from the code snippets.
+It filters out non-comment lines from the code snippets.
+It normalizes the non-comment code snippets by converting them into single-line strings and removing unnecessary spaces.
+It then splits the normalized code into lists of strings.
+It identifies differences in the interpreter lines and the raw lines (which include formatting).
+It categorizes the differences and returns them as a list of dictionaries.
+Main Section:
+
+Purpose: This section demonstrates how to use the resolve_diff and resolve_categorized_diff functions with example code snippets.
+How It Works:
+It defines three code snippets: snippet_a, snippet_b, and snippet_c.
+It prints the differences between snippet_a and snippet_b, and between snippet_b and snippet_c using the resolve_diff function.
+It prints the categorized differences between snippet_a and snippet_b using the resolve_categorized_diff function.
